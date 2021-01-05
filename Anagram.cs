@@ -1,9 +1,10 @@
+using System;
 using System.Collections.Generic;
 
 namespace Problems
 {
   public class Anagram {
-      public static bool IsAnagram(string s, string t) {
+      public static bool UsingDictionary(string s, string t) {
         if (s.Length != t.Length)
           return false;
 
@@ -31,6 +32,25 @@ namespace Problems
           } else {
             return false;
           }
+        }
+        return true;
+      }
+
+      public static bool bruteForce(string s, string t)
+      {
+        if (s.Length != t.Length)
+          return false;
+
+        char[] str1 = s.ToCharArray();
+        char[] str2 = s.ToCharArray();
+
+        Array.Sort(str1);
+        Array.Sort(str2);
+
+        for(int i = 0; i < str1.Length; i++)
+        {
+          if (str1[i] != str2[i])
+            return false;
         }
         return true;
       }

@@ -8,8 +8,7 @@ namespace Problems
         {
             var s =  "anagram";
             var t = "nagaram";
-
-            Console.WriteLine(Anagram.IsAnagram(s, t));
+            Console.WriteLine(Anagram.UsingDictionary(s, t));
        ;     // ReverseString.option1(yo);
         }
     }
