@@ -6,9 +6,9 @@ namespace Problems
     {
         static void Main(string[] args)
         {
-            var s =  "anagram";
-            var t = "nagaram";
-            Console.WriteLine(Anagram.UsingDictionary(s, t));
+            var s =  "anagrm";
+            var t = "nagaam";
+            Console.WriteLine(Anagram.bruteForce(s, t));
        ;     // ReverseString.option1(yo);
         }
     }
