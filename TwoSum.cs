@@ -35,6 +35,26 @@ namespace Problems
       }
       return false;
     }
-  }
 
+    public static int[] TwoSumArray(int[] nums, int target)
+    {
+      Dictionary<int, int> dict = new Dictionary<int, int>();
+      for(int i = 0; i < nums.Length; i++)
+      {
+        var num = nums[i];
+        var differens = target - nums[i];
+        if (dict.ContainsKey(differens))
+        {
+          return new int[] {i, dict[differens]};
+        }
+
+        if (!dict.ContainsKey(num))
+        {
+          dict.Add(num, i);
+        }
+      }
+      return null;
+    }
+
+  }
 }
