@@ -6,10 +6,7 @@ namespace Problems
     {
         static void Main(string[] args)
         {
-            var s =  "anagrm";
-            var t = "nagaam";
-            Console.WriteLine(Anagram.bruteForce(s, t));
-       ;     // ReverseString.option1(yo);
+            Console.WriteLine(LongSubst.bruteForce("abcdeaa"));
         }
     }
 }
