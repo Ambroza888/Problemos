@@ -10,6 +10,7 @@ namespace Problems
       {
         return 0;
       }
+
       bool negative = num < 0;
       int reversed = 0;
 
@@ -23,6 +24,7 @@ namespace Problems
         reversed = (reversed * 10) + (num % 10);
         num = (int)Decimal.Floor(num / 10);
       }
+
 
       return negative ? (reversed * -1) : reversed;
     }
