@@ -22,7 +22,7 @@ namespace Problems
     }
     public static void option2(string str)
     {
-      char[] result = new char[str.Length]; 
+      char[] result = new char[str.Length];
     }
   }
 }

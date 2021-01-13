@@ -9,7 +9,7 @@ namespace Problems
       //['a','b','c','X'] , ['z','y''X'] -- > false
     public static bool On2(int[] arr1,int[] arr2)
     {
-      // O(a*b) 
+      // O(a*b)
       foreach(int i in arr1)
       {
         foreach(int j in arr2)
@@ -26,9 +26,9 @@ namespace Problems
     {
       Dictionary<int,bool> first = new Dictionary<int, bool>();
       foreach(int i in arr1)
-        {
-          first.Add(i,true);
-        }
+      {
+        first.Add(i,true);
+      }
       foreach(int j in arr2)
       {
         if(first.ContainsKey(j))
