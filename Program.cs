@@ -1,5 +1,8 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 using System.Text;
+using System.Linq;
 
 namespace Problems
 {
@@ -7,10 +10,6 @@ namespace Problems
     {
         static void Main(string[] args)
         {
-            myStack.Push(1);
-            myStack.Push(2);
-            myStack.Push(3);
-            myStack.Top();
         }
     }
 }
